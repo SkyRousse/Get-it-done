@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Register to Get It Done!</h1>
+    <form action='/register' method='POST'>
+        <label for='email'>Email</label>
+        <input name='email' type='email' value='{{ email }}' />
+        <label for='password'>Password</label>
+        <input type='password' name='password' />
+        <label for='verify'>Verify Password</label>
+        <input name='verify' type='password'>
+        <button type='submit'>Register</button>
+    </form>
+{% endblock %}
