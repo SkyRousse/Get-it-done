@@ -13,3 +13,15 @@ nav a {
     text-decoration: none;
     color: hotpink;
 }
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}

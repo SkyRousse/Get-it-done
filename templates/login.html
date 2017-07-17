@@ -2,7 +2,6 @@
 
 {% block content %}
 <h1>Login to Get It Done!</h1>
-<p>If you don't have an account yet you can get one <a href='/register' alt='registration-link'>here</a>
 <form action='/login' method='POST'>
     <label for='email'>Email</label>
     <input name='email' type='email' value='{{ email }}' />
@@ -10,4 +9,5 @@
     <input name='password' type='password' />
     <button type='submit'>Login</button>
 </form>
+<p>If you don't have an account yet <a href='/register' alt='registration-link'>register here</a>
 {% endblock %}
