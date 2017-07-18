@@ -25,7 +25,9 @@
                 </form>
             {% endfor %}
         </ul>
+    {% endif %}
 
+    {% if completed_tasks|length != 0 %}
         <hr />
         <h2>Completed</h2>
         <ul>
@@ -33,6 +35,6 @@
             <li>{{task.name}}</li>
             {% endfor %}
         </ul>
-
     {% endif %}
+
 {% endblock %}
